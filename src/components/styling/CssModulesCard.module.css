@@ -1,0 +1,228 @@
+/* Scoped CSS Module styles - classes get hashed automatically to avoid global namespace collisions */
+
+.cardContainer {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Variant: Featured */
+.cardFeatured {
+  border-color: #818cf8;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
+  box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.12);
+}
+
+/* Variant: Compact */
+.cardCompact {
+  padding: 1rem;
+}
+
+/* Accent Color Variations */
+.accentIndigo {
+  border-top: 4px solid #4f46e5;
+}
+
+.accentEmerald {
+  border-top: 4px solid #10b981;
+}
+
+.accentRose {
+  border-top: 4px solid #f43f5e;
+}
+
+.accentAmber {
+  border-top: 4px solid #f59e0b;
+}
+
+/* Header */
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.iconWrapper {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.accentIndigo .iconWrapper {
+  background-color: #eef2ff;
+  color: #4f46e5;
+}
+
+.accentEmerald .iconWrapper {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.accentRose .iconWrapper {
+  background-color: #fff1f2;
+  color: #e11d48;
+}
+
+.accentAmber .iconWrapper {
+  background-color: #fffbeb;
+  color: #d97706;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+/* Body */
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.cardDescription {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+/* Stats Row */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  background-color: #f8fafc;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #f1f5f9;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statValue {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1e293b;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.6875rem;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  margin-top: 0.125rem;
+}
+
+/* Actions Footer */
+.actionsFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.accentIndigo .primaryButton {
+  background-color: #4f46e5;
+}
+.accentIndigo .primaryButton:hover {
+  background-color: #4338ca;
+}
+
+.accentEmerald .primaryButton {
+  background-color: #10b981;
+}
+.accentEmerald .primaryButton:hover {
+  background-color: #059669;
+}
+
+.accentRose .primaryButton {
+  background-color: #f43f5e;
+}
+.accentRose .primaryButton:hover {
+  background-color: #e11d48;
+}
+
+.accentAmber .primaryButton {
+  background-color: #f59e0b;
+}
+.accentAmber .primaryButton:hover {
+  background-color: #d97706;
+}
+
+.interactiveTools {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toolButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.375rem 0.625rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.toolButton:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.toolButtonActive {
+  background-color: #fee2e2;
+  color: #ef4444;
+  border-color: #fecaca;
+}
